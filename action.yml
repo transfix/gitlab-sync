@@ -1,4 +1,4 @@
-name: 'Sync to GitLab'
+name: 'tfx-gitlab-snyc'
 description: 'Automatically sync your GitHub repository with GitLab'
 branding:
   icon: 'arrow-right'
@@ -17,7 +17,7 @@ runs:
   using: 'composite'
   steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
     - name: Push to GitLab
